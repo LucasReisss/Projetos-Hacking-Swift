@@ -21,29 +21,38 @@
                                 <rect key="frame" x="83" y="100" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GG3-mY-g4G"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi7-Lc-0xu">
-                                <rect key="frame" x="83" y="230" width="224" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi7-Lc-0xu">
+                                <rect key="frame" x="83" y="244" width="224" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Ckv-qI-f1E"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARI-eE-sac"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RE-BP-dFG">
-                                <rect key="frame" x="83" y="360" width="224" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RE-BP-dFG">
+                                <rect key="frame" x="83" y="374" width="224" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Jcp-SM-afD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxf-ui-sxf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4RE-BP-dFG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7R6-R4-8SQ"/>
-                            <constraint firstItem="pi7-Lc-0xu" firstAttribute="top" secondItem="TDR-fL-9zQ" secondAttribute="bottom" constant="16" id="I9r-MZ-mv1"/>
+                            <constraint firstItem="pi7-Lc-0xu" firstAttribute="top" secondItem="TDR-fL-9zQ" secondAttribute="bottom" constant="30" id="I9r-MZ-mv1"/>
                             <constraint firstItem="TDR-fL-9zQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="OOU-r6-jc2"/>
                             <constraint firstItem="4RE-BP-dFG" firstAttribute="top" secondItem="pi7-Lc-0xu" secondAttribute="bottom" constant="30" id="VzP-Pd-Rye"/>
                             <constraint firstItem="pi7-Lc-0xu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v0D-qA-PDB"/>
