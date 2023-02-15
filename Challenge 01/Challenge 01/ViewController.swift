@@ -19,6 +19,8 @@ class ViewController: UITableViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAppTapped))
+        
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -54,6 +56,13 @@ class ViewController: UITableViewController {
             vc.totalPictures = pictures.count
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    @objc func shareAppTapped() {
+        let vc = UIActivityViewController(activityItems: ["Baixe o app de imagens para ter acesso a uma infinidade de incríveis fotos."], applicationActivities: [])
+        
+        vc.popoverPresentationController?.barButtonItem
+        present(vc, animated: true)
     }
 
 
